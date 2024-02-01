@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>minggu2</title>
+
+    <style>
+        .divpractice {
+            width: 700px;
+            height: 400px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: green;
+        }
+
+        .divpractice > .first {
+            width: 300px;
+            height: 200px;
+            margin-top: 5px;
+
+            background-color: red;
+        }
+
+        .divpractice > .second {
+            width: 300px;
+            height: 350px;
+
+            margin-bottom: 5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: blue;
+        }
+
+        .divpractice > .second > button {
+            margin: 2px;
+            padding: 5px;
+
+            color: blue;
+            background-color: aqua;
+            border-color: white;
+            border-radius: 5px;
+        }
+
+        #input-box {
+            border-radius: 5px;
+            border-color: blue;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>My Review Page</h1>
+    <h2>This is subtitle</h2>
+
+    <input type="text" id="input-box" placeholder="ketikan sesuatu...">
+
+    <div class="divpractice">
+        <div class="first">first div</div>
+        <div class="second" id="second-box">
+            <button onclick="hey()">button first</button>
+            <button>button second</button>
+            <button>button third</button>
+        </div>
+    </div>
+
+    <script>
+        function hey() {
+            alert('hay!!!...')
+        }
+    </script>
+
+</body>
+</html>
